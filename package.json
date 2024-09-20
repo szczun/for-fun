@@ -1,0 +1,34 @@
+{
+  "name": "siemanko",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "start": "node ./backend/servers/server",
+    "server": "nodemon ./backend/servers/server",
+    "build": "vite build",
+    "preview": "vite preview",
+    "format": "prettier --write \"src/**/*.{js,jsx}\"",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet",
+    "heroku-postbuild": "npm run build"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^2.1.0",
+    "eslint": "8.24.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-react": "^7.31.8",
+    "prettier": "2.7.1",
+    "vite": "^3.1.4"
+  },
+  "dependencies": {
+    "express": "^4.21.0",
+    "nodemon": "^3.1.7",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
